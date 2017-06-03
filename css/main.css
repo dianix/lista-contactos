@@ -1,0 +1,27 @@
+header>nav.navbar {
+    background-color: #ff9412;
+    color: #fff;
+}
+
+.navbar-header>a.navbar-brand {
+    color: #fff;
+}
+
+.nav>li>a {
+    color: #fff;
+    border-radius: 0;
+    line-height: 3rem;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: rgba(69, 69, 69, 0.1);
+}
+
+.m-t {
+    margin-top: 5rem;
+}
+
+.container .jumbotron {
+    padding: 1rem;
+}

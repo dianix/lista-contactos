@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>misContactos</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand pull-left t-white" href="#">misContactos</a>
+                    <ul class="nav nav-pills pull-right">
+                        <li><a href="#!"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+                        <li><a data-toggle="modal" data-target="#datosContacto" href="#!"><span class="glyphicon glyphicon-plus text-white" aria-hidden="true"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container m-t">
+        <h5><small>Contactos:</small> <span id="numeroContactos" class="badge"></span></h5>
+        <section id="listaContactos">
+
+            <article class="jumbotron">
+                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4>Contacto Muestra</h4>
+                <p>5544443333</p>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- FORMATO CONTACTO NUEVO - MODAL -->
+    <div class="modal fade" id="datosContacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Nuevo Contacto</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="contacto" class="col-xs-2 control-label"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="contacto" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono" class="col-xs-2 control-label"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></label>
+                            <div class="col-xs-10">
+                                <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10 text-center">
+                                <button type="submit" class="btn btn-success"><b>AGREGAR</b></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
