@@ -50,18 +50,18 @@
                         <div class="form-group">
                             <label for="contacto" class="col-xs-2 control-label"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></label>
                             <div class="col-xs-10">
-                                <input type="text" class="form-control" id="contacto" placeholder="Nombre">
+                                <input type="text" class="form-control" id="contacto" placeholder="Nombre"  max="20" />
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="telefono" class="col-xs-2 control-label"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></label>
                             <div class="col-xs-10">
-                                <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                                <input type="number" class="form-control" id="telefono" placeholder="Teléfono" size="10" max="10" />
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10 text-center">
-                                <button id="enviarDatos" type="button" class="btn btn-success"><b>AGREGAR</b></button>
+                                <button id="enviarDatos" type="button" class="btn btn-success" disabled><b>AGREGAR</b></button>
                             </div>
                         </div>
                     </form>
@@ -69,8 +69,6 @@
             </div>
         </div>
     </div>
-
-
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
