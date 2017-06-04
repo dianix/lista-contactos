@@ -1,7 +1,7 @@
 var cargarPagina = function () {
     cantidadContactos();
     //var $datosContacto = $("#datosContacto");
-    //$datosContacto.submit(nuevoContacto); <-- problemas con el submit
+    //$datosContacto.submit(nuevoContacto); //<-- problemas con el submit
     var $enviarDatos = $("#enviarDatos");
     $enviarDatos.click(nuevoContacto);
 
